@@ -9,11 +9,24 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    // MARK: outlets
+    @IBOutlet weak var cpuCaculateBtn: UIButton!
+    @IBOutlet weak var gpuCaculateBtn: UIButton!
+    
+    // MARK: override methods
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    // MARK: Actions
+    @IBAction func cpuCaculateTouchUpInside(_ sender: UIButton) {
+    }
+    
+    @IBAction func gpuCaculateTouchUpInside(_ sender: UIButton) {
+    }
+    
+    // MARK: methods
 
 
 }
