@@ -16,6 +16,7 @@
 		9B9F9C6624DE3A8200D3AA05 /* PrimeNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9F9C6524DE3A8200D3AA05 /* PrimeNumberTests.swift */; };
 		9B9F9C7324E0CF5400D3AA05 /* PrimeNumberCaculateMetal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9F9C7224E0CF5400D3AA05 /* PrimeNumberCaculateMetal.swift */; };
 		9B9F9C7524E0D01500D3AA05 /* primeNuberCaculate.metal in Sources */ = {isa = PBXBuildFile; fileRef = 9B9F9C7424E0D01500D3AA05 /* primeNuberCaculate.metal */; };
+		9B9F9C7C24E0F9E100D3AA05 /* Algorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9F9C7B24E0F9E100D3AA05 /* Algorithm.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,9 @@
 		9B9F9C6724DE3A8200D3AA05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B9F9C7224E0CF5400D3AA05 /* PrimeNumberCaculateMetal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeNumberCaculateMetal.swift; sourceTree = "<group>"; };
 		9B9F9C7424E0D01500D3AA05 /* primeNuberCaculate.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = primeNuberCaculate.metal; sourceTree = "<group>"; };
+		9B9F9C7A24E0F9E000D3AA05 /* PrimeNumber-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PrimeNumber-Bridging-Header.h"; sourceTree = "<group>"; };
+		9B9F9C7B24E0F9E100D3AA05 /* Algorithm.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Algorithm.m; sourceTree = "<group>"; };
+		9B9F9C7D24E0FD4000D3AA05 /* Algorithm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Algorithm.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,9 @@
 			children = (
 				9B9F9C7224E0CF5400D3AA05 /* PrimeNumberCaculateMetal.swift */,
 				9B9F9C7424E0D01500D3AA05 /* primeNuberCaculate.metal */,
+				9B9F9C7D24E0FD4000D3AA05 /* Algorithm.h */,
+				9B9F9C7B24E0F9E100D3AA05 /* Algorithm.m */,
+				9B9F9C7A24E0F9E000D3AA05 /* PrimeNumber-Bridging-Header.h */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -171,6 +178,7 @@
 				TargetAttributes = {
 					9B9F9C4A24DE3A7E00D3AA05 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 					9B9F9C6024DE3A8200D3AA05 = {
 						CreatedOnToolsVersion = 11.5;
@@ -223,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B9F9C7524E0D01500D3AA05 /* primeNuberCaculate.metal in Sources */,
+				9B9F9C7C24E0F9E100D3AA05 /* Algorithm.m in Sources */,
 				9B9F9C7324E0CF5400D3AA05 /* PrimeNumberCaculateMetal.swift in Sources */,
 				9B9F9C5324DE3A7E00D3AA05 /* ViewController.swift in Sources */,
 				9B9F9C4F24DE3A7E00D3AA05 /* AppDelegate.swift in Sources */,
@@ -386,6 +395,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C2A4267SKZ;
 				INFOPLIST_FILE = PrimeNumber/Info.plist;
@@ -395,6 +405,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cloudju.PrimeNumber;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PrimeNumber/Controller/PrimeNumber-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -404,6 +416,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C2A4267SKZ;
 				INFOPLIST_FILE = PrimeNumber/Info.plist;
@@ -413,6 +426,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cloudju.PrimeNumber;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PrimeNumber/Controller/PrimeNumber-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

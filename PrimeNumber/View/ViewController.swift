@@ -21,6 +21,18 @@ class ViewController: UIViewController {
     
     // MARK: Actions
     @IBAction func cpuCaculateTouchUpInside(_ sender: UIButton) {
+        let inputDataCount = 100
+        var inputData:[Float] = []
+        for _ in 0..<inputDataCount {
+            inputData.append(Float(arc4random_uniform(UInt32(inputDataCount))))
+        }
+        
+        for i in 0..<inputDataCount {
+            inputData[i] = check(inputData[i])
+        }
+        
+        print(inputData)
+        
     }
     
     @IBAction func gpuCaculateTouchUpInside(_ sender: UIButton) {
