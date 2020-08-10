@@ -24,6 +24,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func gpuCaculateTouchUpInside(_ sender: UIButton) {
+        let caculator = PrimeNumberCaculateMetal.def
+        caculator.calculate()
     }
     
     // MARK: methods

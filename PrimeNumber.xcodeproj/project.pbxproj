@@ -14,6 +14,8 @@
 		9B9F9C5824DE3A8200D3AA05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B9F9C5724DE3A8200D3AA05 /* Assets.xcassets */; };
 		9B9F9C5B24DE3A8200D3AA05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B9F9C5924DE3A8200D3AA05 /* LaunchScreen.storyboard */; };
 		9B9F9C6624DE3A8200D3AA05 /* PrimeNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9F9C6524DE3A8200D3AA05 /* PrimeNumberTests.swift */; };
+		9B9F9C7324E0CF5400D3AA05 /* PrimeNumberCaculateMetal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9F9C7224E0CF5400D3AA05 /* PrimeNumberCaculateMetal.swift */; };
+		9B9F9C7524E0D01500D3AA05 /* primeNuberCaculate.metal in Sources */ = {isa = PBXBuildFile; fileRef = 9B9F9C7424E0D01500D3AA05 /* primeNuberCaculate.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		9B9F9C6124DE3A8200D3AA05 /* PrimeNumberTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrimeNumberTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B9F9C6524DE3A8200D3AA05 /* PrimeNumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeNumberTests.swift; sourceTree = "<group>"; };
 		9B9F9C6724DE3A8200D3AA05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B9F9C7224E0CF5400D3AA05 /* PrimeNumberCaculateMetal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeNumberCaculateMetal.swift; sourceTree = "<group>"; };
+		9B9F9C7424E0D01500D3AA05 /* primeNuberCaculate.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = primeNuberCaculate.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,8 @@
 		9B9F9C7124DE875600D3AA05 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				9B9F9C7224E0CF5400D3AA05 /* PrimeNumberCaculateMetal.swift */,
+				9B9F9C7424E0D01500D3AA05 /* primeNuberCaculate.metal */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -216,6 +222,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B9F9C7524E0D01500D3AA05 /* primeNuberCaculate.metal in Sources */,
+				9B9F9C7324E0CF5400D3AA05 /* PrimeNumberCaculateMetal.swift in Sources */,
 				9B9F9C5324DE3A7E00D3AA05 /* ViewController.swift in Sources */,
 				9B9F9C4F24DE3A7E00D3AA05 /* AppDelegate.swift in Sources */,
 				9B9F9C5124DE3A7E00D3AA05 /* SceneDelegate.swift in Sources */,
