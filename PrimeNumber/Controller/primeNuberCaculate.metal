@@ -7,8 +7,7 @@
 //
 
 #include <metal_stdlib>
-using namespace metal;
-
+#include "Algorithm.m"
 using namespace metal;
 
 kernel void addOne(const device float *inputData [[ buffer(0) ]],
@@ -16,6 +15,7 @@ kernel void addOne(const device float *inputData [[ buffer(0) ]],
                          uint id [[ thread_position_in_grid ]])
 {
     float result = inputData[id];
-    result += 1.0f;
-    outputData[id] = result;
+//    result += 1.0f;
+//    outputData[id] = result;
+    outputData[id] = check(result);
 }
